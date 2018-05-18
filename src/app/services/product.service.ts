@@ -19,7 +19,7 @@ export class ProductService {
         name : product.name,
         category: product.category,
         location: product.location,
-        price: product.location
+        price: product.price
     });
   }
 
@@ -28,7 +28,7 @@ export class ProductService {
       name: product.name,
       category: product.category,
       location: product.location,
-      price: product.location
+      price: product.price
     });
   }
 
