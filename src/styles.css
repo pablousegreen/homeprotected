@@ -1,1 +1,83 @@
-/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: "Arial",serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden;
+  }
+  
+  .bear{
+    background-color: #3b5998;
+    overflow: hidden;
+    height: 63px;
+  }
+  
+  .bear a{
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align:center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .bear ul{
+    margin: 8px 0 0 0;
+    list-style: none;
+  }
+  
+  .bear a:hover{
+    background-color: #ddd;
+    color: #000;
+  }
+  
+  .sidex-one{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.8s;
+  }
+  
+  .sidex-one a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #ccc;
+    display:block;
+    transition: 0.3s;
+  }
+  
+  .sidex-one a:hover{
+    color: #fff;
+  }
+  
+  .sidex-one .btn-close{
+    position: absolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  #main{
+    transition: marginLeft 0.5s;
+    padding:20px;
+    overflow:hidden;
+    width: 100%;
+  }
+  
+  @media(max-width:568px) {
+    .bear-nav{display: none;}
+  }
+  
+  @media (min-width:568px) {
+    /*.open-slide{display:none}*/
+  }
+  

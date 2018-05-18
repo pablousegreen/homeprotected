@@ -4,18 +4,64 @@
   <meta charset="utf-8">
   <title>Homeprotected</title>
   <base href="/">
-
+  <!--link rel="stylesheet" href="../src/styles/style.scss"-->
+  
   <!--bootstrap4-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
   <!--fontaewsome5-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
   
+  <link rel="stylesheet" href="../src/styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+    <nav class="bear">
+        <span class="open-slide">
+          <a href="#" onclick="openSlideMenu()">
+            
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+          </a>
+        </span>
+        <ul class="bear-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div id="side-menu"class="sidex-one">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <!--div id="main">
+        <h1>Menu Responsive</h1>
+      </div-->
+
+      
 	<!--body-->
   <app-root></app-root>
+
+  <script type="text/javascript">
+    function openSlideMenu(){
+      document.getElementById("side-menu").style.width='250px';
+      //document.getElementById("main").style.marginLeft='250';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById("side-menu").style.width='0';
+     // document.getElementById("main").style.marginLeft='0';
+    }
+
+  </script>
 </body>
 </html>
