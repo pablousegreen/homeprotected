@@ -1,11 +1,11 @@
 body{
     font-family: "Arial",serif;
-    background-color: #f4f4f4;
+    background-color: #f4f4f5;
     overflow-x: hidden;
   }
   
   .bear{
-    background-color: #3b5998;
+    background-color: #01194b;
     overflow: hidden;
     height: 63px;
   }
@@ -41,7 +41,7 @@ body{
     opacity: .9;
     overflow-x: hidden;
     padding-top: 60px;
-    transition: 0.8s;
+    transition: 1.5s;
   }
   
   .sidex-one a{
